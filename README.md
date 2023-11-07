@@ -88,4 +88,9 @@ truffle migrate
 npm start
 ```
 
+### 
+```bash
+truffle migrate
+truffle deploy
+```
 
