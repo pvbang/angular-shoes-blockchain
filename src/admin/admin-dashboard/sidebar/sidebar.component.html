@@ -1,0 +1,37 @@
+<nav
+  id="sidebarMenu"
+  class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse"
+  [attr.aria-expanded]="!isCollapsed"
+  [ngClass]="{ collapse: isCollapsed }"
+>
+  <div class="position-sticky pt-3">
+
+    <ul class="list-unstyled ps-0 mx-3">
+      <li class="list-main mb-1">
+        <button
+          class="btn btn-dash align-items-center rounded collapsed active"
+          [routerLink]="'admin-dashboard'"
+        >
+          <i class="fas fa-home"></i>&nbsp;&nbsp;Dashboard
+        </button>
+      </li>
+
+      <li class="list-main mb-1">
+        <button
+          class="btn btn-dash align-items-center rounded collapsed"
+          [routerLink]="'doctor'"
+        >
+          <i class="fa-solid fa-shoe-prints"></i>&nbsp;&nbsp;Shoes
+        </button>
+      </li>
+
+    </ul>
+    <ul class="nav flex-column sign-out" [routerLink]="''">
+      <li class="border-top my-3"></li>
+      <li>
+        <i class="fas fa-sign-out-alt"></i>
+        &nbsp;Đăng xuất
+      </li>
+    </ul>
+  </div>
+</nav>
