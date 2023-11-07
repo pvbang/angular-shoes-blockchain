@@ -19,61 +19,61 @@ https://www.youtube.com/playlist?list=PL54V-i7zW55d1VKxEkp9DCPt5k_zE6m3X
 ### Requirements
 ```bash
 # Install nodeJs: 
-[Node JS](https://nodejs.org/en/download/)
+https://nodejs.org/en/download/
 
 # Install Ganache
-[Ganache Truffle](https://www.trufflesuite.com/ganache)
+https://www.trufflesuite.com/ganache
   - New Workspace
   - AddProject
   - Select truffle-config.js in Project Directory
   - Save Workspace
 
 # Download IPFS
-[IPFS](https://docs.ipfs.tech/install/ipfs-desktop/)
+https://docs.ipfs.tech/install/ipfs-desktop/
 
-## IPFS -> Setting -> System Config: 
-  ###
-  "API": {
-    "HTTPHeaders": {
-      "Access-Control-Allow-Methods": [
-        "GET",
-        "POST"
-      ],
-      "Access-Control-Allow-Origin": [
-        "*"
-      ]
+  ## IPFS -> Setting -> System Config: 
+    ###
+    "API": {
+      "HTTPHeaders": {
+        "Access-Control-Allow-Methods": [
+          "GET",
+          "POST"
+        ],
+        "Access-Control-Allow-Origin": [
+          "*"
+        ]
+      }
     }
-  }
 
-  ###
-  "Gateway": {
-    "APICommands": [],
-    "DeserializedResponses": null,
-    "DisableHTMLErrors": null,
-    "ExposeRoutingAPI": null,
-    "HTTPHeaders": {
-      "Access-Control-Allow-Headers": [
-        "X-Requested-With",
-        "Range",
-        "User-Agent"
-      ],
-      "Access-Control-Allow-Methods": [
-        "GET",
-        "POST"
-      ],
-      "Access-Control-Allow-Origin": [
-        "*"
-      ]
-    },
-    "NoDNSLink": false,
-    "NoFetch": false,
-    "PathPrefixes": [],
-    "PublicGateways": null,
-    "RootRedirect": ""
-  }
+    ###
+    "Gateway": {
+      "APICommands": [],
+      "DeserializedResponses": null,
+      "DisableHTMLErrors": null,
+      "ExposeRoutingAPI": null,
+      "HTTPHeaders": {
+        "Access-Control-Allow-Headers": [
+          "X-Requested-With",
+          "Range",
+          "User-Agent"
+        ],
+        "Access-Control-Allow-Methods": [
+          "GET",
+          "POST"
+        ],
+        "Access-Control-Allow-Origin": [
+          "*"
+        ]
+      },
+      "NoDNSLink": false,
+      "NoFetch": false,
+      "PathPrefixes": [],
+      "PublicGateways": null,
+      "RootRedirect": ""
+    }
 
 # Add Metamask Extension in Browser
-[Metamask Chrome](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en-US)
+https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en-US
 ```
 
 ### Setup Project

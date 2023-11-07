@@ -11,11 +11,11 @@ import { DoctorService } from 'src/admin/services/doctor.service';
 export class AddComponent implements OnInit {
   model: any = {
     docID: '',
-    fName: 'test_name',
-    lName: 'test_name',
+    fName: 'Tên giày test',
+    lName: 'Loại giày test',
     Doj: '',
-    emailID: 'test_name@mail.com',
-    phone: '123456789',
+    emailID: 'Thương hiệu test',
+    phone: 'Mô tả test',
     city: 'city',
     state: 'state',
     speciality: 'speciality',
@@ -47,7 +47,7 @@ export class AddComponent implements OnInit {
   onAddDocSubmit() {
     console.log('vao')
     this.show = true;
-    this.msg_text = 'Adding Doctor to the Network....';
+    this.msg_text = 'Thêm giày vào Network....';
     this.warn = false;
     this.success = false
 
@@ -57,18 +57,18 @@ export class AddComponent implements OnInit {
 
     this.ds.addDoctor(this.model.docID, data).then((r: any) => {
       this.success = true
-      this.msg_text = 'Data added to IPFS...';
-      this.msg_text += '<br>User Added to the Blockchain';
-      console.log('User added Successfully');
+      this.msg_text = 'Thêm dữ liệu giày vào IPFS...';
+      this.msg_text += '<br>Thêm giày vào Blockchain';
+      console.log('Shoe added Successfully');
 
       this.model = {}
 
     }).catch((er: any) => {
       this.warn = true
       this.msg_text =
-        'Adding Doctor Failed<br> <small class="fw-light text-danger"><b>"</b>' +
+        'Thêm giày lỗi<br> <small class="fw-light text-danger"><b>"</b>' +
         this.model.docID +
-        '<b>"</b></small><br>1.not a valid address or <br>2.Already have a role';
+        '<b>"</b></small><br>Lỗi';
       console.log(er);
     })
   }
