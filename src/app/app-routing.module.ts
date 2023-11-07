@@ -9,11 +9,6 @@ const routes: Routes = [
     loadChildren: () =>
       import('../admin/admin.module').then((m) => m.AdminModule)
   },
-  {
-    path: 'doctor',
-    loadChildren: () =>
-      import('../shoes/doctor.module').then((m) => m.DoctorModule),
-  },
   {path: '**', component: HomeComponent, redirectTo: '', pathMatch: "full"},
 ];
 
